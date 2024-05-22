@@ -1,0 +1,137 @@
+#search:hover {
+    background-color: green;
+    color: white;;;
+}
+
+.table-title {
+    background: #435d7d;
+    color: #fff;
+    padding: 18px 10px 10px 10px;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+body {
+    background: #ebe8e8;
+    font-family:'Varela Round', sans-serif;
+    font-size: 13px;
+}
+
+.table-title .btn {
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    min-width: 50px;
+    border-radius: 2px;
+    border: none;
+    outline: none !important;
+    margin-left: 10px;
+}
+
+table.table td a.delete {
+    color: #F44336;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+table.table td a.edit {
+    color: #FFC107;
+    text-decoration: none;
+
+}
+
+.pagination {
+    float: right;
+}
+
+.hint-text {
+    float: left;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #435d7d;
+}
+
+.pagination li.active a, .pagination li.active a.page-link {
+    background: #03A9F4;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.previous:hover {
+    text-decoration: underline;
+}
+
+.pagination li a {
+    border: none;
+    font-size: 13px;
+    min-width: 30px;
+    min-height: 30px;
+    color: #999;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 2px !important;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+}
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 3px;
+    min-width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.modal-header {
+    justify-content: space-between;
+}
+
+.close {
+    font-size: 20px;
+    background-color: white;
+    border: none;
+}
+
+.custom-checkbox {
+    position: relative;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::before {
+    background-color: #03A9F4;
+    border-color: #03A9F4;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: -2px;
+    left: 1px;
+    font-size: 15px;
+    color: white;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label {
+            display: inline-flex;
+            margin: 5px 25px;
+            text-align: left;
+            width: 150px;
+        }
+
+        .value {
+            display: inline-block;
+            width: 200px;
+        }
+        #name {
+            display: inline-table;
+            margin: 0;
+            padding: auto;
+            text-align: left;
+            width: 170px;
+        }
+        
+        h3 {
+            margin: 0;
+            padding: auto;
+            margin-bottom: 10px;
+        }
+
+        .radio-button {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0px;
+        }
+
+        .employeeID {
+            margin-left: auto;
+        }
+
+        .lastname {
+            margin-left: auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 25px;
+        }
+
+        button {
+            margin-left: 10px;
+            width: 100px;
+            height: 30px;
+            background-color: gray;
+        }
+
+        button:hover {
+            background-color:mediumslateblue;
+        }
+
+    </style>
+</head>
+<body>
+    <form style="font-family:Arial, Helvetica, sans-serif; font-weight: bold;">
+        <h3>Basic Info</h3>
+        <hr>
+        <div>
+            <label>Employee ID</label>
+            <label class="employeeID">9</label>
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+            <label class="lastname">Vũ Xuân Huy</label>
+        </div>
+        <div>
+            <label for="firstname">First Name</label>
+            <input type="text" id="name" value="Huy">
+        </div>
+        <div style="display: flex;">
+            <label for="gender" style="align-items: center;">Gender</label>
+            <div class="radio-button">
+                <label><input type="radio">Male</label>
+                <label><input type="radio">Female</label>
+                <label><input type="radio">XXX</label>
+                <label><input type="radio" checked>ZZZ</label>
+            </div>
+        </div>
+        <div>
+            <label for="">Title</label>
+            <input type="text" name="title" id="title" value="abc">
+        </div>
+        <div>
+            <label for="">Suffix</label>
+            <input type="text" name="Suffix" id="Suffix" value="Mrs.">
+        </div>
+        <div>
+            <label for="">BirthDate</label>
+            <input type="datetime" name="birthdate" id="birthdate">
+        </div>
+        <div>
+            <label for="">HireDate</label>
+            <input type="datetime" name="hiredate" id="hiredate">
+        </div>
+        <div>
+            <label for="">SSN</label>
+            <input type="text" name="ssn" id="ssn">
+        </div>
+        <div>
+            <label for="">Report to</label>
+            <select>
+                <option value="Buchanan">Buchanan</option>
+            </select>
+        </div>
+        <br>
+        <h3>Contact Info</h3><hr>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" placeholder="name@example.com">
+        </div>
+        <div>
+            <label for="">Address</label>
+            <input type="text" name="address">
+        </div>
+        <div>
+            <label for="">City</label>
+            <input type="text" name="city">
+        </div>
+        <div>
+            <label for="">Region</label>
+            <input type="text" name="region">
+        </div>
+        <div>
+            <label for="">Postal Code</label>
+            <input type="text" name="code">
+        </div>
+        <div>
+            <label for="">Country</label>
+            <select name="" id="">
+                <option value="russia">Russian Federation</option>
+            </select>
+        </div>
+        <div>
+            <label for="">US home phone</label>
+            <input type="text" name="phone">
+        </div>
+        <div>
+            <label>Photo</label>
+            <input type="file">
+        </div>
+        <br>
+        <h3>Optional Info</h3>
+        <hr>
+        <div>
+            <label for="note" style="display: inline-flexbox;">Notes</label>
+            <textarea name="note" id="note" cols="30" rows="10"></textarea>            
+        </div>
+        <div>
+            <label for="">Preferred Shift</label>
+            <label for=""><input type="checkbox" value="regular">Regular</label>
+            <label for=""><input type="checkbox" value="cravyyard" checked>Cravy Yard</label>
+        </div>
+        <div>
+            <label for="">Active?</label>
+            <label for=""><input type="checkbox" name="active" id="active" checked></label>
+        </div>
+        <div>
+            <label for="">Are you human?</label>
+            <input type="text" name="" id="">
+        </div>
+        <br>
+        <hr>
+        <div class="button-container">
+            <button type="submit">Submit</button>
+            <button type="button">Cancel</button>
+        </div>
+    </form>
+</body>
+</html>
